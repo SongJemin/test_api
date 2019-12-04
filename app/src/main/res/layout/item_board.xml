@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginVertical="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/board_main_img"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher_background"
+        />
+
+    <TextView
+        android:id="@+id/board_title_tv"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/board_main_img"
+        android:layout_marginTop="50dp"
+        android:text="게시판 제목"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/board_content_tv"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/board_title_tv"
+        android:layout_alignLeft="@+id/board_title_tv"
+        android:text="게시판 내용"
+        />
+</RelativeLayout>
